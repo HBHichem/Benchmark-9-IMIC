@@ -11,8 +11,7 @@
 ## General Information
 <details>
 <summary>What are the dates of the contest?</summary>
-
-Important dates :
+  
 * Registration and team formation : asap, before May 2025
 * Submission of your proposal : end of July 2025
 * Annoucements of winners : next SOHOMA edition, september 2025
@@ -20,17 +19,18 @@ Important dates :
 
 <details>
 <summary>Who can participate?</summary>
-- Teams can include both students and faculty researchers
-- No limitation on team size
-- No specific degree or academic level required
-- Open to any combination of students and researchers
+  
+* Teams can include both students and faculty researchers
+* No limitation on team size
+* No specific degree or academic level required
+* Open to any combination of students and researchers
 </details>
 
 ## Technical Requirements
 <details>
 <summary>What is the theme or subject of the contest?</summary>
 
-The contest description cand be found here
+The contest description cand be found [here](2025_edition/Instances/SOHOMA24_toy/The_Flexibac_Problem.md)
 </details>
 
 <details>
