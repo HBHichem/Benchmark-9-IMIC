@@ -12,22 +12,25 @@
 <details>
 <summary>What are the dates of the contest?</summary>
 
-Important dates are ....
+Important dates :
+* Registration and team formation : asap, before May 2025
+* Submission of your proposal : end of July 2025
+* Annoucements of winners : next SOHOMA edition, september 2025
 </details>
 
 <details>
 <summary>Who can participate?</summary>
-
-[Eligibility criteria and requirements]
+- Teams can include both students and faculty researchers
+- No limitation on team size
+- No specific degree or academic level required
+- Open to any combination of students and researchers
 </details>
 
 ## Technical Requirements
 <details>
 <summary>What is the theme or subject of the contest?</summary>
 
-The contest focuses on intelligent production management solutions, specifically:
-- [Theme details]
-- [Specific focus areas]
+The contest description cand be found here
 </details>
 
 <details>
