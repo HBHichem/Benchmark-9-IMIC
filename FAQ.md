@@ -76,18 +76,18 @@ IMIC constestants are free to use the hardware and software solutions they prefe
 <summary id="Flexsim-intallation">How can I get Flexsim?</summary>
  To get the installer for free, please go on the [Flexsim website](https://www.flexsim.com) and choose "Try for free". Follow the instructions to get the Flexsim version adapted to your computer operating system.
 </details>
+
 ## Submission Process
 <details>
 <summary>How should I submit my entry?</summary>
 
 Step-by-step submission process:
-1. [First step]
-2. [Second step]
-3. [Final step]
+1. Prepare a paper describing the method used to determine your solution. This paper should respect the SOHOMA format.
+2. Add the files BoxTransfer.dat and CartTransfer.dat, which are the two files of your solution, in a *.zip archive.
+3. Send this archive to theIMIC organization commitee [contact@example.com](contact@example.com)
 </details>
 
 <details>
-  
 <summary>What format is expected for the submissions?</summary>
 
 Accepted formats include:
@@ -141,18 +141,14 @@ Prize structure:
 <summary>How can I get help during the contest?</summary>
 
 Support channels:
-- 📧 Email: [contact@example.com]
+- 📧 Email: [contact@example.com](contact@example.com)
 - 💬 Discord: [discord link]
-- 🌐 Support portal: [portal link]
+- 🌐 Support portal: [portal link](https://github.com/GIS-S-mart/Benchmark-9-IMIC)
 </details>
 
 ---
 
-> **Note**: This FAQ is updated regularly. Last update: [DATE]
-
-### Status Badges
-![Contest Status](https://img.shields.io/badge/Contest-Active-green)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-November%202024-blue)
+> **Note**: This FAQ is updated regularly. Last update: 2024/11/05
 
 ### Quick Links
 - [Official Rules](#)
