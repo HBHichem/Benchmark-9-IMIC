@@ -107,33 +107,26 @@ Accepted formats include:
 <details>
 <summary>How will the winners be selected?</summary>
 
-Selection criteria include:
-- Performance metrics
-- Innovation level
-- Business impact
-- [Other evaluation criteria]
+The winners will be selected based on quantitative and qualitative criteria :
+* Quantitative criteria : maximizing the number of boxes processed by the robot while minimizing the number of carts transfered.
+* Qualitative criteria : quality of the article provided, as well as the level of genericity of the proposed solution.
 </details>
 
 <details>
 <summary>What types of prizes or rewards are offered?</summary>
-
-Prize structure:
-- First place: [Prize details]
-- Second place: [Prize details]
-- [Other rewards]
+To be announced.
 </details>
 
 ## Privacy & Legal
 <details>
 <summary>Will my personal data be used for other purposes?</summary>
 
-[Privacy policy details]
+No, your personal data will stay confidential but when announcing the winners' identity.
 </details>
 
 <details>
 <summary>What are the intellectual property rights related to the winning solutions?</summary>
-
-[IP rights explanation]
+Contestants should be aware that the best solutions will be archived on our benchmark website. They will keep their IP on but the technical details will be shared via an Open Source license.
 </details>
 
 ## Support
@@ -149,8 +142,3 @@ Support channels:
 ---
 
 > **Note**: This FAQ is updated regularly. Last update: 2024/11/05
-
-### Quick Links
-- [Official Rules](#)
-- [Submit Entry](#)
-- [Contact Support](#)
