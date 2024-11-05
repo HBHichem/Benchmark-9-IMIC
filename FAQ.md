@@ -43,7 +43,7 @@ The contest description cand be found [here](2025_edition/The_Flexibac_Problem.m
 <details>
 <summary>What techniques or technologies are expected in the solutions?</summary>
 
-The IMC'25 is opened to any type of computer-assisted solutions. Accepted technologies include <u>but are not limited to </u>:
+The IMC'25 is opened to any type of computer-assisted solutions. Accepted technologies include *but are not limited to*:
 - Operational Research
 - Simulation
 - Multi-Agent Systems
@@ -56,11 +56,26 @@ IMIC constestants are free to use the hardware and software solutions they prefe
 </details>
 
 <details>
+  
 <summary>How should I use the simulator?</summary>
-To use 
+  The simulator package can be found here *(/!\ lien à mettre /!\)*
+  The package is composed of 4 files :
+  * The file *.fsm is the Flexsim simulation model of the flexibac problem. T
+  * 4 files *.dat, whose specifications and usages is detailed in the problem presentation.
 
+  The procedure to launch the simulator is the following :
+  
+  1. Open the simulation model. o open it, you'll need to download and install Flexsim version 24.0 or higher. Refer to the question [How can I get Flexsim?](#Flexsim-intallation) for more info.
+  2. Once opened, you'll need to launch the flexsim model. If you don't know how to do it, we recommend you to make at least the beginner tutorials available when launching Flexsim.
+  3.  When you start the program, four windows will pop up one after the other, asking you to pick four *.dat files. You can tell which file to choose by looking at the window title (top left) or the file type (bottom right). see the figure below for a graphic explanation.
+  ![image](https://github.com/user-attachments/assets/9340bb51-f6c5-40f8-99d2-629d487be156)
+  4. The simulation should then be working properly.
 </details>
 
+<details>
+<summary id="Flexsim-intallation">How can I get Flexsim?</summary>
+ To get the installer for free, please go on the [Flexsim website](https://www.flexsim.com) and choose "Try for free". Follow the instructions to get the Flexsim version adapted to your computer operating system.
+</details>
 ## Submission Process
 <details>
 <summary>How should I submit my entry?</summary>
