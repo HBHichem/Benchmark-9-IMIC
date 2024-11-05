@@ -12,18 +12,8 @@ In a couple of years, IMIC is expected to become a reference benchmark for the c
 
 ## First edition's theme: The Flexibac problem
 The theme was announced during the SOHOMA 2024 conference.
-In this problem, a robot loads carts with mail containers having the same destination (homogeneous carts).
-There are 250 possible container destinations and only 10 carts around the robot with a fixed capacity.
-Several types of decisions should be made :
-- Which carts around the robot all along the production?
-- When to change carts? 
-+ Which containers are treated by the robot and which are treated manually by operators?
-+ ...
-  
-More details on the problem are available here.
-
-![image](images/Flexibac.png)
-
+In this problem, a robot loads carts with mail containers having the same destination (homogeneous carts) and The problem is to manage boxes and carts all along the working period.
+More details on the problem are available [here](2025_edition/The_Flexibac_Problem.md).
 
 ## Important dates
 People interested in joining the contest should consider the following planning
