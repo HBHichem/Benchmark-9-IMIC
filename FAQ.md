@@ -1,4 +1,4 @@
-# Contest FAQ
+# IMIC'25 FAQ
 
 ## Table of Contents
 - [General Information](#general-information)
@@ -12,7 +12,7 @@
 <details>
 <summary>What are the dates of the contest?</summary>
 
-[Detailed contest timeline and important dates]
+Important dates are ....
 </details>
 
 <details>
