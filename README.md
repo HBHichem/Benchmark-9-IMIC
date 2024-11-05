@@ -46,5 +46,9 @@ The different proposals will be evaluated on different criteria related to the q
 ## Contest prizes
 To be announced.
 
+## Frequently Asked Questions / Technical forum
+To help the contestants all along the competition, A FAQ is available [here](FAQ.md).
+A forum may be opened if needed during the competition.
+
 ## References
 Indicate the SOHOMA paper.
