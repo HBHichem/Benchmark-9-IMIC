@@ -28,9 +28,10 @@ The registration is completely free.
 ### *From October to May* : Publication of the problem on the web platform
 This Github page is the container of all information related to IMIC.
 The following pages are available for team members to access and use :
-+ The problem is detailed here
++ The problem is detailed [here](2025_edition/The_Flexibac_Problem.md).
 + A simulator is provided to the teams for testing their tentative solutions. All information about the simulator and its use are available here.
-+ A FAQ page will be available soon. 
++ A FAQ is available [here](FAQ.md).
++ A forum will be opened if needed.
 The IMIC organization team will make its best to keep the participants informed of any important context modifications, but team members are advised to come on these pages regurlarly to check for any changes.
 
 ### *End of July* : Submission of the contestants' proposals
@@ -45,10 +46,6 @@ The different proposals will be evaluated on different criteria related to the q
 
 ## Contest prizes
 To be announced.
-
-## Frequently Asked Questions / Technical forum
-To help the contestants all along the competition, A FAQ is available [here](FAQ.md).
-A forum may be opened if needed during the competition.
 
 ## References
 Indicate the SOHOMA paper.
