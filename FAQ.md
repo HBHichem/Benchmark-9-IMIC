@@ -26,29 +26,39 @@
 * Open to any combination of students and researchers
 </details>
 
-## Technical Requirements
+<details>
+<summary>How should I register?</summary>
+
+The registration form is available [here](https://forms.office.com/e/FapnDQsVvv).
+</details>
+
 <details>
 <summary>What is the theme or subject of the contest?</summary>
 
-The contest description cand be found [here](2025_edition/Instances/SOHOMA24_toy/The_Flexibac_Problem.md)
+The contest description cand be found [here](2025_edition/The_Flexibac_Problem.md)
+
 </details>
 
-<details>
-<summary>What types of intelligent production management problems are eligible?</summary>
-
-Eligible problem areas include:
-- [Problem type 1]
-- [Problem type 2]
-- [Problem type 3]
-</details>
-
+## Technical Requirements
 <details>
 <summary>What techniques or technologies are expected in the solutions?</summary>
 
-Accepted technologies include:
-- Artificial Intelligence
-- Optimization algorithms
-- [Other relevant technologies]
+The IMC'25 is opened to any type of computer-assisted solutions. Accepted technologies include <u>but are not limited to </u>:
+- Operational Research
+- Simulation
+- Multi-Agent Systems
+- Deep learning
+</details>
+
+<details>
+<summary>Are there any limitations on the computer hardware used?</summary>
+IMIC constestants are free to use the hardware and software solutions they prefer.
+</details>
+
+<details>
+<summary>How should I use the simulator?</summary>
+To use 
+
 </details>
 
 ## Submission Process
@@ -62,6 +72,7 @@ Step-by-step submission process:
 </details>
 
 <details>
+  
 <summary>What format is expected for the submissions?</summary>
 
 Accepted formats include:
