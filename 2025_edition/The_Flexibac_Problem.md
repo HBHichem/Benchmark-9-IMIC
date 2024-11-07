@@ -1,42 +1,53 @@
 # Benchmark Problem. "The Flexibac problem"
 ## Industrial context
-The problem is extracted from an industrial collaboration between the group La Poste (French postal services) and Nantes University. The purpose of this collaboration was to define suitable control strategies for an existing mail sorting system in which a 6-axis robot was going to be introduced. The overall project was called Flexibac, and a schematic representation of the expected result can be seen in the following figure. Pictures of the actual implementation of the robot cannot be shown due to confidentiality issues.
-
+The problem is extracted from an industrial collaboration between the group La Poste (French postal services) and Nantes University. The purpose of this collaboration was to define suitable control strategies for an existing mail sorting system in which a 6-axis robot was going to be introduced. The overall project was called Flexibac, and a schematic representation of the expected result can be seen in the following figure. Pictures of the actual implementation of the robot cannot be shown due to confidentiality issues. 
 ![image](../images/Flexibac.png)
+
+This project addresses critical operational challenges in mail distribution centers. In the current system, mail is stored in boxes weighing approximately 20kg each, with 250 different possible destinations. Human operators manually move these boxes from outputs to carts that are later transported to trucks. The system handles between 10,000 to 35,000 boxes daily, creating significant physical strain on workers and risks of musculoskeletal disorders. To address this, a robotic solution was introduced where a robot loads carts with mail containers, ensuring each cart contains boxes sharing the same destination (homogeneous carts). The system faces several operational constraints:
+
+ -While there are 250 possible container destinations, only 10 carts can be positioned around the robot at any time.
+ -Each robot operation takes approximately 5 seconds to handle a container.
+ -Cart changes, whether full or not, require about 1 minute to complete.
+ -Each cart has a fixed capacity that cannot be exceeded.
+
+Thus, the key decisions in this system revolve around two main questions:
+
+ -Cart allocation: Which destination carts should be placed around the robot throughout the production period to optimize the overall system performance?
+ -Box handling distribution: Which boxes should be handled by the robot versus manually by operators, considering the system's constraints and efficiency goals?
+
+These decisions directly impact both the system's throughput and the reduction of physical strain on human operators, making them crucial for the overall success of the automation project.
 
 ## Introduction
 
-*Guidelines:*
-
-Write a short introduction of the benchmark that includes at least the following items:
-
-- Type of research: Does the benchmark intend to be qualitative and/or quantitative?
-- The main discipline(s) it contributes to
-- The goal of the study (to understand and/or improve design)
-- The type of contribution (theory to knowledge and/or empirical to practice)
-- Object(s) to validate (theory, method, tool, process...)
-- Expected results
-
-*Template:*
+This benchmark study bridges both qualitative and quantitative research approaches, with a primary focus on operational performance metrics while carefully considering real-world practical constraints. Positioned at the intersection of intelligent manufacturing control, operational research, industrial automation, industrial engineering, and logistics optimization, the study aims to enhance the design and control strategies of robotic mail sorting systems while simultaneously addressing the critical need to reduce human physical strain. The contribution is twofold: theoretical, through advancing knowledge in robotic control strategies, and empirical, by delivering practical solutions ready for industrial implementation. The research seeks to validate scheduling algorithms, planification and decision-making processes specifically designed for robot-assisted sorting systems. The expected outcomes include optimal or near-optimal solutions that will maximize robotic handling efficiency while minimizing both manual operations and cart changes, ultimately providing a comprehensive framework for improving automated mail sorting operations.
 
 ## Glossary
 
-*Guidelines:*
+To ensure clear communication and shared understanding among all stakeholders, this section provides definitions of key terms and parameters used throughout the problem description. Each term is accompanied by its common synonyms to maintain consistency across different implementations. Contributors should reuse existing terms and definitions from existing standards and not invent new ones unless they have a very specific concept that requires the introduction of a new key term and definition. Any new key term and definition must be motivated and explained in the discussion of the proposed solution.
 
-To share a common understanding of ambiguous keywords, contributors shall agree upon the meaning of the keywords by systematically providing a definition and synonyms. Contributors should reuse existing terms and definitions from existing standards and not invent new ones unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*' or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/discussions))
 
-*Template:*
+|    **Key terms**   |          **Synonyms**           |                                    **Definition**                                          | 
+| :----------------: | :-----------------------------: | :----------------------------------------------------------------------------------------: | 
+|  Buffer A          | Input buffer                    |  Main storage area for incoming boxes with limited capacity Amax                           | 
+|  Buffer B          | convoyor  buffer                |  Robot input conveyor with limited capacity Bmax                                           | 
+|  Available carts   | Cart positions                  |  Maximum number of carts that can be positioned around the robot simultaneously (Nc)       |
+|  Cart              | Container                       |  Storage unit placed around the robot with fixed capacity Qmax                             |
+|  Cycle time        | Handling time                   |  Time needed for the robot to pick and place one box (Tp)                                  |
+|  Cart change time  | Changeover time                 |  Fixed duration needed to replace a cart (Tc)                                              |
+|  Competion date    | Time horizon, Planning horizon  |  Total duration of the scenario to be considered for planning and optimization (EndDate)   |
 
-| **Keyword** | **Synonyms** | **Definition** | **Source** |
-| :---------: | :----------: | :------------: | :--------: |
-|             |              |                |            |
+## Considered topology 
+
+The physical layout and interaction between system components play a crucial role in understanding the constraints and opportunities for optimization. While the actual industrial system encompasses a complex network of conveyors and workstations, we present here a simplified yet representative model that captures the essential elements and their relationships. Thus, to facilitate understanding and avoid misinterpretation, the complex industrial sorting system has been deliberately simplified into a schematic topology, as illustrated in the following figure, highlighting the key elements: input buffer A, the convoyor buffer B, the robotic cell, the cart positions as well as the final strocks for both robot-processed boxes and the manually handled boxes. 
+![image](../images/Topology.png)
 
 ## Goals
 
-Specify the common set of goals that the competing solutions pursue:
-- The solution shall enable to...
-- The solution shall enable to...
-- The solution shall enable to...
+The Flexibac problem addresses multiple objectives that balance operational efficiency with practical constraints. The following goals have been established to guide the development and evaluation of competing solutions, with special attention to both automated and manual operations management:
+- The solution shall enable to maximize the number of boxes handled by the robot in a 24-hour period
+- The solution shall enable to minimize the number of cart changes required from operators
+- The solution shall enable to respect all system constraints (buffer capacities, cycle times, cart capacities)
+- The solution shall enable to handle online (real-time) and/or offline (pre-planned) scenarios
 
 ## Metrics
 
