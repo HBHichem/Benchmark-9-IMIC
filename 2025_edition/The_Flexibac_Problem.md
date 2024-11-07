@@ -27,15 +27,15 @@ This benchmark study bridges both qualitative and quantitative research approach
 To ensure clear communication and shared understanding among all stakeholders, this section provides definitions of key terms and parameters used throughout the problem description. Each term is accompanied by its common synonyms to maintain consistency across different implementations. Contributors should reuse existing terms and definitions from existing standards and not invent new ones unless they have a very specific concept that requires the introduction of a new key term and definition. Any new key term and definition must be motivated and explained in the discussion of the proposed solution.
 
 
-|    **Key terms**   |          **Synonyms**           |                                    **Definition**                                          | 
-| :----------------: | :-----------------------------: | :----------------------------------------------------------------------------------------: | 
-|  Buffer A          | Input buffer                    |  Main storage area for incoming boxes with limited capacity Amax                           | 
-|  Buffer B          | convoyor  buffer                |  Robot input conveyor with limited capacity Bmax                                           | 
-|  Available carts   | Cart positions                  |  Maximum number of carts that can be positioned around the robot simultaneously (Nc)       |
-|  Cart              | Container                       |  Storage unit placed around the robot with fixed capacity Qmax                             |
-|  Cycle time        | Handling time                   |  Time needed for the robot to pick and place one box (Tp)                                  |
-|  Cart change time  | Changeover time                 |  Fixed duration needed to replace a cart (Tc)                                              |
-|  Competion date    | Time horizon, Planning horizon  |  Total duration of the scenario to be considered for planning and optimization (EndDate)   |
+|      **Key terms**     |          **Synonyms**           |                                    **Definition**                                          | 
+| :--------------------: | :-----------------------------: | :----------------------------------------------------------------------------------------: | 
+|  Buffer A              | Input buffer                    |  Main storage area for incoming boxes with limited capacity Amax                           | 
+|  Buffer B              | convoyor  buffer                |  Robot input conveyor with limited capacity Bmax                                           | 
+|  Available cart slots  | Cart positions                  |  Maximum number of carts that can be positioned around the robot simultaneously (Nc)       |
+|  Cart                  | Container                       |  Storage unit placed around the robot with fixed capacity Qmax                             |
+|  Cycle time            | Handling time                   |  Time needed for the robot to pick and place one box (Tp)                                  |
+|  Cart change time      | Changeover time                 |  Fixed duration needed to replace a cart (Tc)                                              |
+|  Competion date        | Time horizon, Planning horizon  |  Total duration of the scenario to be considered for planning and optimization (EndDate)   |
 
 ## Considered topology 
 
@@ -100,8 +100,8 @@ The model developed by the contestants must accept a set of inputs provided by t
 
 The inputs for different instances will be provided by the contest organizers, including the scenario parameters and the list of input boxes and destinations. Based on these inputs, the contestant's model must generate two specific output files: one detailing the dates of box transfers from the input buffer to the robot, and another listing the dates of cart changes around the robot. in addition, The performance of the submitted solutions will be evaluated against key metrics, which seek to balance the primary objective of maximizing robotic handling with the secondary goal of minimizing manual cart changes.
 
-## Output files Description (To be finilized)
-
+## Input and Output files Description (To be finilized)
+<!-- link to the presentation of william-->
 ![image](../images/Output_File2.jpg)
 
 ## Instances Description (To be finilized)
