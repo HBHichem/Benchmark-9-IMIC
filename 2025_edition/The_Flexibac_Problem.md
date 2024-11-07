@@ -100,17 +100,11 @@ The model developed by the contestants must accept a set of inputs provided by t
 
 The inputs for different instances will be provided by the contest organizers, including the scenario parameters and the list of input boxes and destinations. Based on these inputs, the contestant's model must generate two specific output files: one detailing the dates of box transfers from the input buffer to the robot, and another listing the dates of cart changes around the robot. in addition, The performance of the submitted solutions will be evaluated against key metrics, which seek to balance the primary objective of maximizing robotic handling with the secondary goal of minimizing manual cart changes.
 
-## Simulator Description (To be finilized)
-
-![image](../images/Simulator.png)
-
 ## Output files Description (To be finilized)
 
 ![image](../images/Output_File2.jpg)
 
 ## Instances Description (To be finilized)
-
-
 
 <!--## Benchmark exercises
 
