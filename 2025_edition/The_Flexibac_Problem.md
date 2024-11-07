@@ -39,7 +39,7 @@ To ensure clear communication and shared understanding among all stakeholders, t
 ## Considered topology 
 
 The physical layout and interaction between system components play a crucial role in understanding the constraints and opportunities for optimization. While the actual industrial system encompasses a complex network of conveyors and workstations, we present here a simplified yet representative model that captures the essential elements and their relationships. Thus, to facilitate understanding and avoid misinterpretation, the complex industrial sorting system has been deliberately simplified into a schematic topology, as illustrated in the following figure, highlighting the key elements: input buffer A, the convoyor buffer B, the robotic cell, the cart positions as well as the final strocks for both robot-processed boxes and the manually handled boxes. 
-![image](../images/Topology.png)
+![image](../images/Topology2.jpg)
 
 ## Goals
 
@@ -51,7 +51,7 @@ The Flexibac problem addresses multiple objectives that balance operational effi
 
 ## Metrics
 
-To objectively evaluate and compare different solutions, a comprehensive set of performance indicators has been established. These metrics are designed to measure both the primary objectives of maximizing robotic handling efficiency and the secondary considerations of operational feasibility and system sustainability. The following quantitative and qualitative indicators will be used to assess the performance of proposed solutions:
+To objectively evaluate and compare different solutions, a set of performance indicators has been established. These metrics are designed to measure both the primary objectives of maximizing robotic handling efficiency and the secondary considerations of operational feasibility and system sustainability. The following quantitative and qualitative indicators will be used to assess the performance of proposed solutions:
 
 |           **Name**          |                         **Definition**                           |   **Unit**  |
 | :-------------------------: | :--------------------------------------------------------------: | :---------: |
@@ -68,11 +68,35 @@ While the provided metrics attempts to cover both quantitative and qualitative a
 3. Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones.
 4. Any change to existing metrics must be motivated and explained in the discussion of the proposed solution.
 
-## Categories and problems (To be finilized)
+## Categories and problems
+The IMIC'25 contest offers two distinct simulation categories to evaluate the competing solutions, each with its own set of challenges and objectives. Additionally, the problem instances vary in terms of complexity, testing the limits of the proposed solutions across different dimensions of the system.
 
-## Work overview (To be finilized)
+### Online Simulation Category:
+The online simulation category focuses on developing robust solutions that can adapt to dynamic, real-time changes in the input stream, without any prior knowledge of the boxes to be handled. In this category:
 
-![image](../images/Work_Overview.png)
+- Contestants have no prior knowledge of the input list of boxes to be handled.
+- The focus is on developing robust solutions that can adapt to dynamic, real-time changes in the input stream.
+- Submissions in this category will be tested on their ability to make effective, reactive decisions without relying on complete information in advance.
+
+### Offline Simulation Category:
+In contrast, the offline simulation category allows contestants to leverage complete information about the problem instance, aiming to find optimal or near-optimal solutions through more comprehensive planning and optimization techniques. In this category:
+- Contestants are provided with the full list of input boxes and their destinations before execution.
+- The goal is to find optimal or near-optimal solutions by leveraging complete information about the problem instance.
+- While less representative of real-world conditions, this category allows for the exploration of solution techniques that may not be feasible in the online setting.
+
+Beyond the categorization by simulation approach, the contest also includes problem instances of varying size and complexity, testing the limits of the proposed solutions:
+- Variability: The number of different destinations for the mail containers can range up to 300, increasing the complexity of cart allocation decisions.
+- Volume: The total number of boxes to be handled within the 24-hour scenario can reach up to 40,000, pushing the throughput capabilities of the robotic system.
+- Solution Space Size: The number of carts that can be positioned around the robot may be as high as 10, expanding the combinatorial search space for optimal cart configurations.
+
+To ensure a comprehensive evaluation, the contest will provide multiple data instances for each problem, allowing contestants to demonstrate the robustness and consistency of their solutions.
+
+## Work overview
+The model developed by the contestants must accept a set of inputs provided by the contest organizers and generate specific outputs that will be used to assess the performance of the proposed solutions. As we can see in the following figure, that outlines the required inputs, the expected outputs, and the key performance indicators that will be used to evaluate the submissions.
+
+![image](../images/Work_Overview2.jpg)
+
+The inputs for different instances will be provided by the contest organizers, including the scenario parameters and the list of input boxes and destinations. Based on these inputs, the contestant's model must generate two specific output files: one detailing the dates of box transfers from the input buffer to the robot, and another listing the dates of cart changes around the robot. in addition, The performance of the submitted solutions will be evaluated against key metrics, which seek to balance the primary objective of maximizing robotic handling with the secondary goal of minimizing manual cart changes.
 
 ## Simulator Description (To be finilized)
 
@@ -80,7 +104,7 @@ While the provided metrics attempts to cover both quantitative and qualitative a
 
 ## Output files Description (To be finilized)
 
-![image](../images/Output_File.png)
+![image](../images/Output_File2.jpg)
 
 ## Instances Description (To be finilized)
 
