@@ -19,7 +19,7 @@ These decisions directly impact both the system's throughput and the reduction o
 
 ## Introduction
 
-This benchmark study bridges both qualitative and quantitative research approaches, with a primary focus on operational performance metrics while carefully considering real-world practical constraints. Positioned at the intersection of intelligent manufacturing control, operational research, industrial automation, industrial engineering, and logistics optimization, the study aims to enhance the design and control strategies of robotic mail sorting systems while simultaneously addressing the critical need to reduce human physical strain. The contribution is twofold: theoretical, through advancing knowledge in robotic control strategies, and empirical, by delivering practical solutions ready for industrial implementation. The research seeks to validate scheduling algorithms, planification and decision-making processes specifically designed for robot-assisted sorting systems. The expected outcomes include optimal or near-optimal solutions that will maximize robotic handling efficiency while minimizing both manual operations and cart changes, ultimately providing a comprehensive framework for improving automated mail sorting operations.
+This benchmark study bridges both qualitative and quantitative research approaches, with a primary focus on operational performance metrics while carefully considering real-world practical constraints. Positioned at the intersection of intelligent manufacturing control, operational research, industrial automation, industrial engineering, and logistics optimization, the study aims to enhance the design and control strategies of robotic mail sorting systems while simultaneously addressing the critical need to reduce human physical strain. The contribution is twofold: (i) theoretical, through advancing knowledge in robotic control strategies, and (ii) empirical, by delivering practical solutions ready for industrial implementation. The research seeks to validate scheduling algorithms, planification and decision-making processes specifically designed for robot-assisted sorting systems. The expected outcomes include optimal or near-optimal solutions that will maximize robotic handling efficiency while minimizing both manual operations and cart changes, ultimately providing a comprehensive framework for improving automated mail sorting operations.
 
 ## Glossary
 
@@ -51,20 +51,22 @@ The Flexibac problem addresses multiple objectives that balance operational effi
 
 ## Metrics
 
-Metrics are quantitative and/or qualitative performance indicators that measure the degree to which the articulated goals have been achieved.
+To objectively evaluate and compare different solutions, a comprehensive set of performance indicators has been established. These metrics are designed to measure both the primary objectives of maximizing robotic handling efficiency and the secondary considerations of operational feasibility and system sustainability. The following quantitative and qualitative indicators will be used to assess the performance of proposed solutions:
 
-*Guidelines:*
+|           **Name**          |                         **Definition**                           |   **Unit**  |
+| :-------------------------: | :--------------------------------------------------------------: | :---------: |
+|  Robot handling rate        | Number of boxes handled by the robot in a 24h period             | Boxes/day   |
+|  Cart changes               | Number of cart changes performed during the operation period     | Changes/day |
+|  Buffer A occupation        | Current number of boxes in buffer A vs. maximum capacity (Amax)  | Percentage  |
+|  Buffer B occupation        | Current number of boxes in buffer B vs. maximum capacity (Bmax)  | Percentage  |
+|  Cart filling rate          | Current number of boxes in each cart vs. maximum capacity (Qmax) | Percentage  |
+|  Solution computation time  | Time needed to calculate the solution (online category only)     | Seconds     |
 
+While the provided metrics attempts to cover both quantitative and qualitative aspects of the proposed solution, please keep in mind the following guidelines:
 1. One or more metrics may measure the achievement of a given goal.
 2. Results must be quantitatively and not only qualitatively compared to the literature in a fair and transparent manner.
 3. Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones.
-4. Any change to existing metrics must be motivated and explained in the repository discussion (e.g., navigate to 'Repositories > Benchmark-0_Template > Discussions', or click here). Once the suggested change is informally approved by the community, the author shall post on the benchmark's issues page (e.g., navigate to '*Repositories > Benchmark-0_Template > Issues*' or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/issues)) and briefly outline the new metric.
-
-*Template:*
-
-| **Name** | **Definition** | **Unit** |
-| :------: | :------------: | :------: |
-|          |                |          |
+4. Any change to existing metrics must be motivated and explained in the discussion of the proposed solution.
 
 ## Benchmark exercises
 
