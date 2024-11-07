@@ -5,15 +5,15 @@ The problem is extracted from an industrial collaboration between the group La P
 
 This project addresses critical operational challenges in mail distribution centers. In the current system, mail is stored in boxes weighing approximately 20kg each, with 250 different possible destinations. Human operators manually move these boxes from outputs to carts that are later transported to trucks. The system handles between 10,000 to 35,000 boxes daily, creating significant physical strain on workers and risks of musculoskeletal disorders. To address this, a robotic solution was introduced where a robot loads carts with mail containers, ensuring each cart contains boxes sharing the same destination (homogeneous carts). The system faces several operational constraints:
 
- -While there are 250 possible container destinations, only 10 carts can be positioned around the robot at any time.
- -Each robot operation takes approximately 5 seconds to handle a container.
- -Cart changes, whether full or not, require about 1 minute to complete.
- -Each cart has a fixed capacity that cannot be exceeded.
+ - While there are 250 possible container destinations, only 10 carts can be positioned around the robot at any time.
+ - Each robot operation takes approximately 5 seconds to handle a container.
+ - Cart changes, whether full or not, require about 1 minute to complete.
+ - Each cart has a fixed capacity that cannot be exceeded.
 
 Thus, the key decisions in this system revolve around two main questions:
 
- -Cart allocation: Which destination carts should be placed around the robot throughout the production period to optimize the overall system performance?
- -Box handling distribution: Which boxes should be handled by the robot versus manually by operators, considering the system's constraints and efficiency goals?
+ - Cart allocation: Which destination carts should be placed around the robot throughout the production period to optimize the overall system performance?
+ - Box handling distribution: Which boxes should be handled by the robot versus manually by operators, considering the system's constraints and efficiency goals?
 
 These decisions directly impact both the system's throughput and the reduction of physical strain on human operators, making them crucial for the overall success of the automation project.
 
