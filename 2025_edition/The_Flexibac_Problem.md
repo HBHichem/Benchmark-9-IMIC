@@ -68,7 +68,23 @@ While the provided metrics attempts to cover both quantitative and qualitative a
 3. Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones.
 4. Any change to existing metrics must be motivated and explained in the discussion of the proposed solution.
 
-## Benchmark exercises
+## Work overview (To be finilized)
+
+![image](../images/Work_Overview.png)
+
+## Simulator Description (To be finilized)
+
+![image](../images/Simulator.png)
+
+## Output files Description (To be finilized)
+
+![image](../images/Output_File.png)
+
+## Instances Description (To be finilized)
+
+
+
+<!--## Benchmark exercises
 
 Benchmark exercises are test cases that serve to evaluate rival solutions.
 
@@ -158,4 +174,5 @@ A meta-analysis integrates the findings by analysing all of the benchmark result
 
 - **Web page, by an individual:** Moon, M. (2019) *Ubisoft put an official video game design course inside a video game*. Available at https://www.engadget.com/2019/09/25/ubisoft-video-game-design-course/ (Accessed 19 November 2019).
 
-- **Web page, by a company or organization:** RotoBaller (2019) *NFL player news*. Available at https://www.rotoballer.com/player-news?sport=nfl (Accessed 17 September 2019).
+- **Web page, by a company or organization:** RotoBaller (2019) *NFL player news*. Available at https://www.rotoballer.com/player-news?sport=nfl (Accessed 17 September 2019). -->
+
