@@ -134,8 +134,7 @@ Contestants should be aware that the best solutions will be archived on our benc
 <summary>How can I get help during the contest?</summary>
 
 Support channels:
-- 📧 Email: [contact@example.com](contact@example.com)
-- 💬 Discord: [discord link]
+- 📧 Email: [imic-organizers@univ-nantes.fr](imic-organizers@univ-nantes.fr)
 - 🌐 Support portal: [portal link](https://github.com/GIS-S-mart/Benchmark-9-IMIC)
 </details>
 
