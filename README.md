@@ -48,4 +48,4 @@ The different proposals will be evaluated on different criteria related to the q
 To be announced.
 
 ## References
-Indicate the SOHOMA paper.
+[Presentation of IMIC at the SOHOMA 2024 workshop](https://hal.science/hal-04770839)
