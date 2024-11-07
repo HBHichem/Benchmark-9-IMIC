@@ -29,7 +29,7 @@ The registration is completely free.
 This Github page is the container of all information related to IMIC.
 The following pages are available for team members to access and use :
 + The problem is detailed [here](2025_edition/The_Flexibac_Problem.md).
-+ A simulator is provided to the teams for testing their tentative solutions. All information about the simulator and its use are available here.
++ A simulator is provided to the teams for testing their tentative solutions. All information about the simulator and its use are available [here](2025_edition/Simulator/README.md).
 + A FAQ is available [here](FAQ.md).
 + A forum will be opened if needed.
 The IMIC organization team will make its best to keep the participants informed of any important context modifications, but team members are advised to come on these pages regurlarly to check for any changes.
