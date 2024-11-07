@@ -68,6 +68,8 @@ While the provided metrics attempts to cover both quantitative and qualitative a
 3. Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones.
 4. Any change to existing metrics must be motivated and explained in the discussion of the proposed solution.
 
+## Categories and problems (To be finilized)
+
 ## Work overview (To be finilized)
 
 ![image](../images/Work_Overview.png)
