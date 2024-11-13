@@ -24,22 +24,22 @@ This benchmark study bridges both qualitative and quantitative research approach
 
 ## Glossary
 
-To ensure clear communication and shared understanding among all stakeholders, this section provides definitions of key terms and parameters used throughout the problem description. Each term is accompanied by its common synonyms to maintain consistency across different implementations. Contributors should reuse existing terms and definitions from existing standards and not invent new ones unless they have a very specific concept that requires the introduction of a new key term and definition. Any new key term and definition must be motivated and explained in the discussion of the proposed solution.
+To ensure clear communication and shared understanding among all stakeholders, this section provides definitions of key terms and parameters used throughout the problem description. Each term is accompanied by its common synonyms to maintain consistency across different experimentations. 
 
 
 |      **Key terms**     |          **Synonyms**           |                                    **Definition**                                          | 
 | :--------------------: | :-----------------------------: | :----------------------------------------------------------------------------------------: | 
 |  Buffer A              | Input buffer                    |  Main storage area for incoming boxes with limited capacity Amax                           | 
-|  Buffer B              | convoyor  buffer                |  Robot input conveyor with limited capacity Bmax                                           | 
+|  Buffer B              | Conveyor  buffer                |  Robot input conveyor with limited capacity Bmax                                           | 
 |  Available cart slots  | Cart positions                  |  Maximum number of carts that can be positioned around the robot simultaneously (Nc)       |
 |  Cart                  | Container                       |  Storage unit placed around the robot with fixed capacity Qmax                             |
 |  Cycle time            | Handling time                   |  Time needed for the robot to pick and place one box (Tp)                                  |
 |  Cart change time      | Changeover time                 |  Fixed duration needed to replace a cart (Tc)                                              |
-|  Competion date        | Time horizon, Planning horizon  |  Total duration of the scenario to be considered for planning and optimization (EndDate)   |
+|  Completion date       | Time horizon, Planning horizon  |  Total duration of the scenario to be considered for planning and optimization (EndDate)   |
 
 ## Considered topology 
 
-The physical layout and interaction between system components play a crucial role in understanding the constraints and opportunities for optimization. While the actual industrial system encompasses a complex network of conveyors and workstations, we present here a simplified yet representative model that captures the essential elements and their relationships. Thus, to facilitate understanding and avoid misinterpretation, the complex industrial sorting system has been deliberately simplified into a schematic topology, as illustrated in the following figure, highlighting the key elements: input buffer A, the convoyor buffer B, the robotic cell, the cart positions as well as the final strocks for both robot-processed boxes and the manually handled boxes. 
+The physical layout and interaction between system components play a crucial role in understanding the constraints and opportunities for optimization. While the actual industrial system encompasses a complex network of conveyors and workstations, we present here a simplified yet representative model that captures the essential elements and their relationships. Thus, to facilitate understanding and avoid misinterpretation, the complex industrial sorting system has been deliberately simplified into a schematic topology, as illustrated in the following figure, highlighting the key elements: the Input buffer A, the Conveyor buffer B, the robotic cell, the cart positions as well as the final stocks for both robot-processed boxes and the manually handled boxes. 
 
 ![image](../images/Topology2.jpg)
 
@@ -59,16 +59,11 @@ To objectively evaluate and compare different solutions, a set of performance in
 | :-------------------------: | :--------------------------------------------------------------: | :---------: |
 |  Robot handling rate        | Number of boxes handled by the robot in a 24h period             | Boxes/day   |
 |  Cart changes               | Number of cart changes performed during the operation period     | Changes/day |
-|  Buffer A occupation        | Current number of boxes in buffer A vs. maximum capacity (Amax)  | Percentage  |
-|  Buffer B occupation        | Current number of boxes in buffer B vs. maximum capacity (Bmax)  | Percentage  |
-|  Cart filling rate          | Current number of boxes in each cart vs. maximum capacity (Qmax) | Percentage  |
-|  Solution computation time  | Time needed to calculate the solution (online category only)     | Seconds     |
+|  Buffer A occupation        | Maximum number of boxes in buffer A vs. maximum capacity (Amax)  | Boxes       |
+|  Buffer B occupation        | Maximum number of boxes in buffer B vs. maximum capacity (Bmax)  | Boxes       |
+|  Cart filling rate          | Maximum number of boxes in each cart vs. maximum capacity (Qmax) | Boxes       |
+|  Solution computation time  | Time needed to calculate the solution (both categories)          | Seconds     |
 
-While the provided metrics attempts to cover both quantitative and qualitative aspects of the proposed solution, please keep in mind the following guidelines:
-1. One or more metrics may measure the achievement of a given goal.
-2. Results must be quantitatively and not only qualitatively compared to the literature in a fair and transparent manner.
-3. Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones.
-4. Any change to existing metrics must be motivated and explained in the discussion of the proposed solution.
 
 ## Categories and problems
 The IMIC'25 contest offers two distinct simulation categories to evaluate the competing solutions, each with its own set of challenges and objectives. Additionally, the problem instances vary in terms of complexity, testing the limits of the proposed solutions across different dimensions of the system.
@@ -76,7 +71,7 @@ The IMIC'25 contest offers two distinct simulation categories to evaluate the co
 ### Online Simulation Category:
 The online simulation category focuses on developing robust solutions that can adapt to dynamic, real-time changes in the input stream, without any prior knowledge of the boxes to be handled. In this category:
 
-- Contestants have no prior knowledge of the input list of boxes to be handled.
+- Contestants have no prior knowledge of the input list of boxes to be handled. However, a statistical analysis of the global inputs can be tolerated if correctly defined and explained. 
 - The focus is on developing robust solutions that can adapt to dynamic, real-time changes in the input stream.
 - Submissions in this category will be tested on their ability to make effective, reactive decisions without relying on complete information in advance.
 
@@ -86,9 +81,10 @@ In contrast, the offline simulation category allows contestants to leverage comp
 - The goal is to find optimal or near-optimal solutions by leveraging complete information about the problem instance.
 - While less representative of real-world conditions, this category allows for the exploration of solution techniques that may not be feasible in the online setting.
 
+### Problems:
 Beyond the categorization by simulation approach, the contest also includes problem instances of varying size and complexity, testing the limits of the proposed solutions:
-- Variability: The number of different destinations for the mail containers can range up to 300, increasing the complexity of cart allocation decisions.
-- Volume: The total number of boxes to be handled within the 24-hour scenario can reach up to 40,000, pushing the throughput capabilities of the robotic system.
+- Variability: The number of different destinations for the mail containers can range up to 260, increasing the complexity of cart allocation decisions.
+- Volume: The total number of boxes to be handled within the 24-hour scenario can reach up to 30,000, pushing the throughput capabilities of the robotic system.
 - Solution Space Size: The number of carts that can be positioned around the robot may be as high as 10, expanding the combinatorial search space for optimal cart configurations.
 
 To ensure a comprehensive evaluation, the contest will provide multiple data instances for each problem, allowing contestants to demonstrate the robustness and consistency of their solutions.
@@ -99,12 +95,13 @@ The model developed by the contestants must accept a set of inputs provided by t
 ![image](../images/Work_Overview2.jpg)
 
 The inputs for different instances will be provided by the contest organizers, including the scenario parameters and the list of input boxes and destinations. Based on these inputs, the contestant's model must generate two specific output files: one detailing the dates of box transfers from the input buffer to the robot, and another listing the dates of cart changes around the robot. in addition, The performance of the submitted solutions will be evaluated against key metrics, which seek to balance the primary objective of maximizing robotic handling with the secondary goal of minimizing manual cart changes.
-
-## Input and Output files Description (To be finilized)
-<!-- link to the presentation of william-->
+<!--
+## Input and Output files Description (To be finalized)
+<!-- link to the presentation of william
 ![image](../images/Output_File2.jpg)
 
-## Instances Description (To be finilized)
+## Instances Description (To be finalized)
+-->
 
 <!--## Benchmark exercises
 
