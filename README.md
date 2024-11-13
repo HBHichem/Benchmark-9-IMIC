@@ -1,6 +1,5 @@
 # Benchmark 9. Intelligent Manufacturing International Contest: IMIC
 
-**Website under construction !**
 
 ## Motivations & Ambitions
 The smart manufacturing community lacks of a suitable, comprehensive, and standardized benchmark for real industrial cases in manufacturing.
@@ -39,7 +38,6 @@ The different proposal have to be submitted before **July, 31st, 2025**. The org
 The submission should include :
 + A short paper describing the methodology followed to obtain the solution.
 + The input files needed to check the solution via the simulator (for more information, see the problem page).
-+ ... ?
 
 ### *From July to September* : Evaluation and validation of the contestants' proposals 
 The different proposals will be evaluated on different criteria related to the quality of the solution but also The quality, rigor, and care taken in the publication.
