@@ -5,7 +5,8 @@
 The problem emerges from collaboration between academic researchers and manufacturing industry partners facing critical spare parts management challenges. Modern manufacturing facilities operate complex equipment requiring 500+ unique spare parts, with unplanned downtime costs ranging from $50,000 to $500,000 per hour. The challenge addresses the fundamental trade-off between inventory holding costs ($2-5M annually) and equipment availability (target 95%+ uptime). 
 
 ```
-figure1_industrial_challenge
+figure1_industrial_challenge 
+![image](../../images/figure1_industrial_challenge.png)
 ```
 
 This contest provides the first standardized benchmark for the intelligent manufacturing systems community, enabling fair comparison of optimization approaches, machine learning methods, and hybrid strategies for spare parts network management.
