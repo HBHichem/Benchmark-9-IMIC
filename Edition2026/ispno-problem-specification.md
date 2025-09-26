@@ -4,10 +4,9 @@
 
 The problem emerges from collaboration between academic researchers and manufacturing industry partners facing critical spare parts management challenges. Modern manufacturing facilities operate complex equipment requiring 500+ unique spare parts, with unplanned downtime costs ranging from $50,000 to $500,000 per hour. The challenge addresses the fundamental trade-off between inventory holding costs ($2-5M annually) and equipment availability (target 95%+ uptime). 
 
-```
-figure1_industrial_challenge 
-![image](../../images/figure1_industrial_challenge.png)
-```
+
+![image](./images/figure1_industrial_challenge.png)
+
 
 This contest provides the first standardized benchmark for the intelligent manufacturing systems community, enabling fair comparison of optimization approaches, machine learning methods, and hybrid strategies for spare parts network management.
 
@@ -15,7 +14,7 @@ This contest provides the first standardized benchmark for the intelligent manuf
 
 This benchmark bridges theoretical optimization and practical manufacturing requirements, positioned at the intersection of operations research, predictive maintenance, and intelligent manufacturing control. The study addresses both deterministic optimization (with known demand patterns) and stochastic control (with uncertain equipment failures), using real NASA bearing failure data to ensure industrial authenticity. 
 
-The contribution is threefold: (i) establishing standardized benchmarks for the IMIC community, (ii) enabling cross-methodology comparison between OR and ML approaches, and (iii) providing scalable problem instances from small educational cases to industry-scale challenges. The expected outcomes include validated algorithms for spare parts optimization and a permanent benchmark repository for manufacturing system research.
+The contribution is twofold: (i) enabling cross-methodology comparison between OR and ML approaches, and (ii) providing scalable problem instances from small educational cases to industry-scale challenges. The expected outcomes include validated algorithms for spare parts optimization and a permanent benchmark repository for manufacturing system research.
 
 ## Glossary
 
@@ -34,30 +33,11 @@ The contribution is threefold: (i) establishing standardized benchmarks for the 
 
 ## Considered Topology
 
-The spare parts network consists of multiple manufacturing facilities connected to suppliers and optional distribution centers. Each facility operates equipment subject to failures (modeled using NASA bearing degradation data), creating stochastic spare parts demand. 
+The spare parts network comprises multiple manufacturing facilities, connected to suppliers and optional distribution centers. Each facility operates equipment that is subject to failures (modeled using NASA bearing degradation data), resulting in stochastic spare parts demand. 
 
-```
-                    SUPPLY NETWORK TOPOLOGY
-    
-    [Suppliers]              [Warehouses]            [Facilities]
-         S1 ─────────────────────► W1 ──────────────────► F1
-         │                          │                       │
-         │      Lead: 3-7 days     │    Lead: 1-2 days    │
-         │                          │                       ↓
-         S2 ─────────────────────► W2 ──────────────────► F2
-         │                          │                       │
-         │                          │                       ↓
-         └──────────────────────────┴───────────────────► F3
-              Direct shipping                              │
-              Lead: 2-5 days                               ↓
-                                                    [NASA Failure
-                                                     Patterns]
-    
-    Demand Generation: Equipment failures based on NASA bearing data
-    Decision Points: Inventory levels, Order quantities, Supplier selection
-```
+![image](./images/figure2_supply_network.png)
 
-Unlike complex digital twin systems, this model uses discrete-event simulation with daily time steps, making it computationally tractable while maintaining industrial relevance.
+This model uses discrete-event simulation with daily time steps, making it computationally tractable while maintaining industrial relevance.
 
 ## Goals
 
@@ -89,24 +69,24 @@ The solution shall enable to:
 ### Contest Structure Overview
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│                    ISPNO CONTEST CATEGORIES                   │
-├────────────────────────┬─────────────────────────────────────┤
-│   DETERMINISTIC        │        STOCHASTIC                   │
-├────────────────────────┼─────────────────────────────────────┤
-│ • Known demand forecast│ • Uncertain demand                  │
-│ • Single simulation run│ • Multiple random seeds             │
-│ • MILP/DP approaches   │ • RL/Robust optimization           │
-│ • Optimal solutions    │ • Adaptive policies                 │
-└────────────────────────┴─────────────────────────────────────┘
+        ┌───────────────────────────────────────────────────┐
+        │                   CONTEST CATEGORIES              │
+        ├────────────────────────┬──────────────────────────┤
+        │   DETERMINISTIC        │        STOCHASTIC        │
+        ├────────────────────────┼──────────────────────────┤
+        │ • Known demand forecast│ • Uncertain demand       │
+        │ • Single simulation run│ • Multiple random seeds  │
+        │ • MILP/DP approaches   │ • RL/Robust optimization │
+        │ • Optimal solutions    │ • Adaptive policies      │
+        └────────────────────────┴──────────────────────────┘
                               ↓
                     Problem Instance Tiers
-          ┌─────────────┬─────────────┬──────────────┐
-          │   SMALL     │   MEDIUM    │    LARGE     │
-          │  20-50 parts│ 100-300 parts│ 500-1000 parts│
-          │  3-5 nodes  │  8-12 nodes │  15-25 nodes │
-          │  30 days    │   90 days   │   180 days   │
-          └─────────────┴─────────────┴──────────────┘
+          ┌─────────────┬─────────────┬─────────────────┐
+          │   SMALL     │   MEDIUM    │    LARGE        │
+          │  20-50 parts│ 100-300 parts│ 500-1000 parts │
+          │  3-5 nodes  │  8-12 nodes │  15-25 nodes    │
+          │  30 days    │   90 days   │   180 days      │
+          └─────────────┴─────────────┴─────────────────┘
 ```
 
 ### Deterministic Category
@@ -255,36 +235,18 @@ Participants develop policies for uncertain demand revealed daily. Demand follow
 ```
     2025 CONTEST TIMELINE
     
-    March       April-May        June         July        September
+    January     March-May       June        Mid-July      September
       │            │              │            │             │
     Launch      Development    Deadline    Results      Conference
       │            │              │            │             │
     ──┴────────────┴──────────────┴────────────┴─────────────┴──
       ↓            ↓              ↓            ↓             ↓
     Release     Support &      Submit      Winners      Present
-    Instances   Tutorials      Solutions   Announced    @ IMIC
+    Instances   Tutorials      Solutions   Announced    @ SOHOMA
 ```
 
 ## Resources
 
 - **GitHub Repository**: Simulator, instances, and documentation
 - **Python Starter Kit**: Example solutions with visualization
-- **Discord Community**: Real-time support and discussions
-- **Video Tutorials**: Step-by-step guidance
 - **Baseline Implementations**: Reference algorithms
-
-## Getting Started
-
-```
-    QUICK START (30 MINUTES)
-    
-    1. Install     →  pip install simpy numpy pandas
-    2. Download    →  git clone ispno-contest
-    3. Test        →  python simulator.py --example
-    4. Develop     →  Edit policy.json
-    5. Submit      →  Upload to contest portal
-```
-
----
-
-*For questions and support, visit our Discord channel or email ispno@imic2026.org*
